@@ -4,14 +4,14 @@ export const business = {
   phoneDisplay: "(575) 637-8300",
   phoneHref: "tel:+15756378300",
   email: "daniel26@aerotemppro.com",
-  emailHref: "mailto:dannygomez@gmail.com",
+  emailHref: "mailto:daniel26@aerotemppro.com",
   address: "520 State Line Dr, Chaparral, NM 88081",
   directionsUrl:
     "https://www.google.com/maps/search/?api=1&query=520+State+Line+Dr%2C+Chaparral%2C+NM+88081",
   mapEmbedUrl:
     "https://www.google.com/maps?q=520%20State%20Line%20Dr%2C%20Chaparral%2C%20NM%2088081&output=embed",
   serviceArea: "El Paso and Las Cruces Region",
-  hours: "Monday–Friday · 8:00 AM–5:00 PM",
+  hours: "Monday – Friday · 8:00 AM – 5:00 PM",
   instagram: "https://www.instagram.com/aerotemp.pro/",
   story:
     "With over 10 years of hands-on experience in the HVAC field, we are proud to bring dependable heating and cooling services to our community through our newly established business. Our goal is to provide honest, professional, and high-quality service on every job, whether it’s installation, maintenance, repairs, or system replacements. We are committed to treating every customer with respect and making sure each experience is smooth, reliable, and built on trust. We look forward to serving everyone who chooses to do business with us!",
