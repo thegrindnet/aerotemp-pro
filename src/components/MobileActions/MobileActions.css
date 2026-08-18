@@ -1,0 +1,43 @@
+.mobile-actions {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .mobile-actions {
+    position: fixed;
+    z-index: 80;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 18px;
+    background: rgba(7, 16, 37, 0.96);
+    box-shadow: 0 18px 50px rgba(7, 16, 37, 0.32);
+    backdrop-filter: blur(14px);
+  }
+
+  .mobile-actions a {
+    display: grid;
+    min-width: 0;
+    min-height: 62px;
+    place-items: center;
+    align-content: center;
+    gap: 4px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.68rem;
+    font-weight: 800;
+  }
+
+  .mobile-actions a + a {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .mobile-actions span {
+    color: var(--green);
+    font-size: 1.1rem;
+  }
+}

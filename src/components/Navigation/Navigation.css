@@ -1,0 +1,119 @@
+.navigation {
+  justify-self: end;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2vw, 28px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__link {
+  position: relative;
+  display: inline-flex;
+  padding-block: 12px;
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 750;
+}
+
+.navigation__link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+  left: 0;
+  height: 2px;
+  background: var(--green);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.navigation__link:hover::after,
+.navigation__link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.navigation__toggle,
+.navigation__mobile-call {
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  .navigation__list {
+    gap: 16px;
+  }
+
+  .navigation__link {
+    font-size: 0.86rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .navigation__toggle {
+    position: relative;
+    z-index: 62;
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-content: center;
+    gap: 5px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--navy);
+  }
+
+  .navigation__toggle span {
+    width: 21px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--white);
+  }
+
+  .navigation__panel {
+    position: fixed;
+    z-index: 60;
+    inset: 72px 0 auto;
+    display: grid;
+    gap: 24px;
+    padding: 36px 28px 44px;
+    background: var(--navy);
+    color: var(--white);
+    box-shadow: 0 30px 60px rgba(7, 16, 37, 0.35);
+    transform: translateY(-130%);
+    visibility: hidden;
+    transition: transform 240ms ease, visibility 240ms ease;
+  }
+
+  .navigation__panel--open {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .navigation__list {
+    display: grid;
+    gap: 0;
+  }
+
+  .navigation__link {
+    display: block;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    color: var(--white);
+    font-size: 1.15rem;
+  }
+
+  .navigation__link::after {
+    display: none;
+  }
+
+  .navigation__mobile-call {
+    display: inline-flex;
+    width: 100%;
+  }
+}

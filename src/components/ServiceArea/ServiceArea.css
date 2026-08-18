@@ -1,0 +1,98 @@
+.service-area {
+  padding: 110px 0;
+  background: var(--mist);
+}
+
+.service-area__heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 44px;
+  align-items: end;
+  margin-bottom: 46px;
+}
+
+.service-area__heading .section-copy {
+  margin: 0;
+}
+
+.service-area__map-shell {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  border-radius: 30px 30px 90px 30px;
+  background: #dbe3d6;
+  box-shadow: var(--shadow);
+}
+
+.service-area__map {
+  width: 100%;
+  height: 520px;
+  border: 0;
+  filter: saturate(0.78) contrast(1.02);
+}
+
+.service-area__address-card {
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+  display: grid;
+  gap: 8px;
+  max-width: 350px;
+  padding: 24px 26px;
+  border-left: 5px solid var(--green);
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 20px 50px rgba(7, 16, 37, 0.3);
+}
+
+.service-area__address-card span {
+  color: var(--green);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.service-area__address-card strong {
+  line-height: 1.45;
+}
+
+.service-area__address-card a {
+  margin-top: 4px;
+  color: var(--white);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .service-area {
+    padding: 82px 0;
+  }
+
+  .service-area__heading {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .service-area {
+    padding: 68px 0;
+  }
+
+  .service-area__map-shell {
+    min-height: 500px;
+    border-radius: 22px 22px 58px 22px;
+  }
+
+  .service-area__map {
+    height: 500px;
+  }
+
+  .service-area__address-card {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    max-width: none;
+    padding: 20px;
+  }
+}

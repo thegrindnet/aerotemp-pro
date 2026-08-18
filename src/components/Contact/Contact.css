@@ -1,0 +1,163 @@
+.contact {
+  padding: 112px 0 128px;
+  background: var(--white);
+}
+
+.contact__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
+  gap: clamp(50px, 8vw, 110px);
+  align-items: stretch;
+}
+
+.contact__content .section-copy {
+  max-width: 680px;
+  margin: 24px 0 0;
+}
+
+.contact__phone {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--navy);
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--green);
+  text-underline-offset: 10px;
+}
+
+.contact__links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 44px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.contact__links > * {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 22px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.contact__links span {
+  color: var(--green-dark);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact__links strong {
+  overflow-wrap: anywhere;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.contact__instagram {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: grid;
+  align-items: end;
+  border-radius: 30px 30px 90px 30px;
+  background: var(--navy);
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.contact__instagram::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 16, 37, 0.08) 15%, rgba(7, 16, 37, 0.9) 78%);
+}
+
+.contact__instagram img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0.86;
+  transition: transform 260ms ease;
+}
+
+.contact__instagram:hover img,
+.contact__instagram:focus-visible img {
+  transform: scale(1.035);
+}
+
+.contact__instagram-copy {
+  position: relative;
+  z-index: 2;
+  padding: 36px;
+}
+
+.contact__instagram-copy span {
+  color: var(--green);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact__instagram-copy strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 2rem;
+}
+
+.contact__instagram-copy p {
+  margin: 14px 0 20px;
+  color: #d2daea;
+  line-height: 1.6;
+}
+
+.contact__instagram-copy b {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--green);
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 84px 0 108px;
+  }
+
+  .contact__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__instagram {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact {
+    padding: 68px 0 100px;
+  }
+
+  .contact__links {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__instagram {
+    min-height: 500px;
+    border-radius: 24px 24px 58px 24px;
+  }
+
+  .contact__instagram-copy {
+    padding: 26px;
+  }
+}

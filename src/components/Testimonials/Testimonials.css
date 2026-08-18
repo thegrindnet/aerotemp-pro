@@ -1,0 +1,124 @@
+.testimonials {
+  padding: 110px 0;
+  background: var(--white);
+}
+
+.testimonials__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(46px, 8vw, 110px);
+  align-items: center;
+}
+
+.testimonials__heading {
+  max-width: 500px;
+}
+
+.testimonials__controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.testimonials__controls button {
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--navy);
+  font-size: 1.2rem;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.testimonials__controls button:hover {
+  background: var(--green);
+  transform: translateY(-2px);
+}
+
+.testimonials__controls span {
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+.testimonials__review {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(32px, 5vw, 64px);
+  border-radius: 30px 30px 90px 30px;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(177, 206, 46, 0.18), transparent 28%),
+    var(--navy);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.testimonials__stars {
+  color: var(--green);
+  letter-spacing: 0.12em;
+}
+
+.testimonials__review blockquote {
+  margin: 30px 0 38px;
+  font-size: clamp(1.45rem, 2.7vw, 2.45rem);
+  font-weight: 720;
+  line-height: 1.35;
+  letter-spacing: -0.03em;
+}
+
+.testimonials__reviewer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.testimonials__avatar {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--green);
+  color: var(--navy);
+  font-weight: 900;
+}
+
+.testimonials__reviewer div:last-child {
+  display: grid;
+  gap: 4px;
+}
+
+.testimonials__reviewer a {
+  color: #cdd6e8;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 820px) {
+  .testimonials {
+    padding: 82px 0;
+  }
+
+  .testimonials__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__heading {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 560px) {
+  .testimonials {
+    padding: 68px 0;
+  }
+
+  .testimonials__review {
+    min-height: 390px;
+    border-radius: 24px 24px 58px 24px;
+  }
+}
