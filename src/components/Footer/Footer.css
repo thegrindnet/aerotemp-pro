@@ -15,7 +15,7 @@
   width: 220px;
   height: 92px;
   object-fit: contain;
-  object-position: left center;
+  /* object-position: left center; */
   background: var(--white);
   border-radius: 14px;
   padding: 10px;

@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logoImage from "../../assets/images/aerotemp-pro-logo.webp";
+import logoImage from "../../assets/images/aerotemp-pro-logo.png";
 import { business, navigationLinks } from "../../utils/constants.js";
 
 function Footer() {
