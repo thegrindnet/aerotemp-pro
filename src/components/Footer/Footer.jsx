@@ -1,5 +1,7 @@
 import "./Footer.css";
 import logoImage from "../../assets/images/aerotemp-pro-logo.png";
+import instagramIcon from "../../assets/images/instagram.png";
+import tiktokIcon from "../../assets/images/tik-tok.png"
 import { business, navigationLinks } from "../../utils/constants.js";
 
 function Footer() {
@@ -23,7 +25,8 @@ function Footer() {
           <a href={business.phoneHref}>{business.phoneDisplay}</a>
           <a href={business.emailHref}>{business.email}</a>
           <a href={business.directionsUrl} target="_blank" rel="noreferrer">{business.address}</a>
-          <a href={business.instagram} target="_blank" rel="noreferrer">Instagram @aerotemp.pro</a>
+          <a href={business.instagram} target="_blank" rel="noreferrer"><span ><img className="footer__icon" src={instagramIcon} alt="instagram icon"/></span>Aerotemp Pro</a>
+          <a href={business.tiktok} target="_blank" rel="noreferrer"><span ><img className="footer__icon" src={tiktokIcon} alt="tiktok icon"/></span>Aerotemp Pro</a>
         </div>
       </div>
       <div className="container footer__bottom">

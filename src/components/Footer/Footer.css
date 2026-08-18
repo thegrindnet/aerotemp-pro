@@ -53,6 +53,7 @@
   color: var(--white);
   text-decoration: none;
   line-height: 1.55;
+  display: flex;
 }
 
 .footer a:hover {
@@ -76,6 +77,11 @@
 
 .footer__bottom p {
   margin: 0;
+}
+
+.footer__icon {
+  width: 30px;
+  padding-right: 5px;
 }
 
 @media (max-width: 760px) {

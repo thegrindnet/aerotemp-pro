@@ -13,6 +13,7 @@ export const business = {
   serviceArea: "El Paso and Las Cruces Region",
   hours: "Monday – Friday · 8:00 AM – 5:00 PM",
   instagram: "https://www.instagram.com/aerotemp.pro/",
+  tiktok: "https://www.instagram.com/aerotemp.pro/",
   story:
     "With over 10 years of hands-on experience in the HVAC field, we are proud to bring dependable heating and cooling services to our community through our newly established business. Our goal is to provide honest, professional, and high-quality service on every job, whether it’s installation, maintenance, repairs, or system replacements. We are committed to treating every customer with respect and making sure each experience is smooth, reliable, and built on trust. We look forward to serving everyone who chooses to do business with us!",
 };
