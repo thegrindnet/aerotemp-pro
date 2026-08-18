@@ -10,7 +10,7 @@ export const business = {
     "https://www.google.com/maps/search/?api=1&query=520+State+Line+Dr%2C+Chaparral%2C+NM+88081",
   mapEmbedUrl:
     "https://www.google.com/maps?q=520%20State%20Line%20Dr%2C%20Chaparral%2C%20NM%2088081&output=embed",
-  serviceArea: "El Paso and Las Cruces Region",
+  serviceArea: "Chaparral, Las Cruces, El Paso and Alamogordo",
   hours: "Monday – Friday · 8:00 AM – 5:00 PM",
   instagram: "https://www.instagram.com/aerotemp.pro/",
   tiktok: "https://www.tiktok.com/@aerotemp.pro",
