@@ -30,17 +30,17 @@ function About() {
           <p className="section-copy">{business.story}</p>
           <div className="about__principles">
             <div>
-              <span>01</span>
+              <span>•</span>
               <h3>Professional Service</h3>
               <p>Clear, respectful service from the first conversation through the finished job.</p>
             </div>
             <div>
-              <span>02</span>
+              <span>•</span>
               <h3>Hands-On Experience</h3>
               <p>More than a decade of field experience across HVAC repair, maintenance, installation, and replacement.</p>
             </div>
             <div>
-              <span>03</span>
+              <span>•</span>
               <h3>Local Focus</h3>
               <p>Serving customers throughout the El Paso and Las Cruces region.</p>
             </div>
