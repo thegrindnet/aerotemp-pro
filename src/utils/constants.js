@@ -3,7 +3,7 @@ export const business = {
   tagline: "Masters of Air Comfort",
   phoneDisplay: "(575) 637-8300",
   phoneHref: "tel:+15756378300",
-  email: "dannygomez@gmail.com",
+  email: "daniel26@aerotemppro.com",
   emailHref: "mailto:dannygomez@gmail.com",
   address: "520 State Line Dr, Chaparral, NM 88081",
   directionsUrl:
