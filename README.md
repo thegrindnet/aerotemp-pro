@@ -2,17 +2,8 @@
 
 A production-ready single-page website for Aerotemp Pro, an HVAC business serving the El Paso and Las Cruces region. The site is built with React, Vite, JavaScript, and plain CSS and is configured for GitHub Pages deployment through GitHub Actions.
 
-## Design Reference
-
-Visual inspiration: `https://www.callarthurair.com/`
-
-The reference was used for high-level inspiration such as a service-first HVAC homepage, prominent phone calls to action, grouped service navigation, financing placement, customer reviews, service-area content, and persistent mobile contact actions. No source code, business copy, branding, customer reviews, or protected imagery from the reference site is reused.
 
 ## Structural Reference
-
-Project organization follows the component-folder pattern used by:
-
-`https://github.com/thegrindnet/mesilla_view_builders_website`
 
 Each major section has its own folder, JSX file, and matching CSS file. Repeated business data is centralized in `src/utils/constants.js`.
 
@@ -85,10 +76,6 @@ Supplied images are optimized to WebP and stored in:
 - `attic-unit-service.webp`
 
 The favicon and Open Graph preview image are in `public/`.
-
-## Financing Note
-
-No financing provider, terms, or application link were provided. The financing section is intentionally marked as awaiting those details instead of inventing a program or presenting a nonfunctional application button.
 
 ## FAQ Note
 
