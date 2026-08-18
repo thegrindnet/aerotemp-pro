@@ -1,6 +1,6 @@
 import "./Header.css";
 import Navigation from "../Navigation/Navigation.jsx";
-import logoImage from "../../assets/images/aerotemp-pro-logo.webp";
+import logoImage from "../../assets/images/aerotemp-pro-logo.png";
 import { business } from "../../utils/constants.js";
 
 function Header() {
